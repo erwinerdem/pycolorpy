@@ -1,13 +1,13 @@
 # pycolorpy
 
-A tool to easily color text and background in strings using python.
+Adds typographical emphasis and text / background color for strings in python.
 
 ## Usage
 
 ```python
-from pycolorpy import (black, red, green, yellow, blue, magenta, cyan, white)
+from pycolorpy import black, red, green, yellow, blue, magenta, cyan, white
 
-example_string = red('Hello ') + green('World') + blue('!', options=['blink'])
+example_string = red('Hello ', background='magenta') + green('World') + blue('!', options=['blink'])
 print(example_string)
 ```
 
@@ -20,6 +20,13 @@ print(example_string)
 * blink
 * selected
 
-### **TODO**
+## Available background color
 
-* Make background not a bool but a color option.
+* black
+* red
+* green
+* yellow
+* blue
+* magenta
+* cyan
+* white
